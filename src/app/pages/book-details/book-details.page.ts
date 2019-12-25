@@ -10,7 +10,7 @@ import { BookService } from './../../services/book.service';
 export class BookDetailsPage implements OnInit {
 
   information = null;
- 
+
   /**
    * Constructor of our details page
    * @param activatedRoute Information about the route we are on
@@ -19,6 +19,16 @@ export class BookDetailsPage implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private bookService: BookService) { }
 
   ngOnInit() {
-  }
+    // Get the ID that was passed with the URL
+    let id = this.activatedRoute.snapshot.paramMap.get('id');
+ 
+    // Get the information from the API
+    this.bookService.getDetails(id).subscribe(result => {
+      this.information = result;
+    });
+    }
+  openWebsite() {
+      window.open(this.information.Website, '_blank');
+    }
 
 }

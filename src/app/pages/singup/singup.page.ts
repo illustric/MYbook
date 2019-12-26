@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { auth } from 'firebase/app';
-//import { AngularFirestore } from '@angular/fire/firebase';
-import { AngularFireAuth } from '@angular/fire/auth'
-import { Router } from '@angular/router';
+
+import { AngularFireAuth } from '@angular/fire/auth';
+import { Router } from '@angular/router'
+
+import { AngularFirestore } from '@angular/fire/firestore'
 
 
 @Component({
@@ -17,9 +19,9 @@ export class SingupPage implements OnInit {
 
 
   constructor(public afAuth: AngularFireAuth,
-		//public afstore: AngularFirestore,
+		public afstore: AngularFirestore,
 		public user: UserService,
-		public alertController: AlertController,
+		//public alertController: AlertController,
 		public router: Router) { }
 
   ngOnInit() {

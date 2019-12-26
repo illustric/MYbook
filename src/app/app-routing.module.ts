@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'book-details/id',
     loadChildren: () => import('./pages/book-details/book-details.module').then( m => m.BookDetailsPageModule)
+  },
+  {
+    path: 'singup',
+    loadChildren: () => import('./pages/singup/singup.module').then( m => m.SingupPageModule)
   }
 ];
 

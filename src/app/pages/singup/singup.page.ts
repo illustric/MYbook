@@ -17,6 +17,7 @@ export class SingupPage implements OnInit {
   username: string = ""
 	password: string = ""
 	cpassword: string = ""
+  alertController: any;
 
 
   constructor(public afAuth: AngularFireAuth,

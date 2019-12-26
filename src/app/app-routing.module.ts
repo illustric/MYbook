@@ -35,9 +35,6 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  { path: 'books/:id',
-    loadChildren: './book-details/book-details.module#BookDetailsPageModule'
   }
 ];
 

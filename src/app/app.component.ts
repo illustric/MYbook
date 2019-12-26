@@ -24,7 +24,7 @@ export class AppComponent {
     {
       title: 'List',
       url: '/singup',
-      icon: 'list'
+      icon: 'create'
     }
   ];
 

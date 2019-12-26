@@ -21,14 +21,14 @@ export class BookDetailsPage implements OnInit {
   ngOnInit() {
     // Get the ID that was passed with the URL
     let id = this.activatedRoute.snapshot.paramMap.get('id');
- 
+
     // Get the information from the API
     this.bookService.getDetails(id).subscribe(result => {
       this.information = result;
     });
-    }
+  }
   openWebsite() {
-      window.open(this.information.Website, '_blank');
-    }
+    window.open(this.information.Website, '_blank');
+  }
 
 }

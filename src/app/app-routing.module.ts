@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { CanActivate, Router } from '@angular/router';
+import { AuthService } from './services/auth.service';
 
 const routes: Routes = [
   {
@@ -17,11 +19,14 @@ const routes: Routes = [
   },
   {
     path: 'books',
-    loadChildren: () => import('./pages/books/books.module').then( m => m.BooksPageModule)
+    loadChildren: () => import('./pages/books/books.module').then( m => m.BooksPageModule),
+    canActivate: [AuthService]
   },
+  
   {
-    path: 'book-details/id',
-    loadChildren: () => import('./pages/book-details/book-details.module').then( m => m.BookDetailsPageModule)
+    path: 'book-details',
+    loadChildren: () => import('./pages/book-details/book-details.module').then( m => m.BookDetailsPageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'singup',
@@ -30,6 +35,9 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  { path: 'books/:id',
+    loadChildren: './book-details/book-details.module#BookDetailsPageModule'
   }
 ];
 

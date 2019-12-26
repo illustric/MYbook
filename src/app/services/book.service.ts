@@ -17,7 +17,7 @@ export enum SearchType {
 })
 export class BookService {
 
-  url = 'http://www.omdbapi.com';
+  url = 'http://www.omdbapi.com/';
   apiKey = 'b1cbb0e1'; // <-- Enter your own key here!
  
   /**

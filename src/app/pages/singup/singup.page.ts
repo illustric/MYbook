@@ -48,7 +48,7 @@ export class SingupPage implements OnInit {
 
 			this.afstore.doc(`users/${res.user.uid}`).set({
 				username,
-				password
+        password
 			})
 
 			this.user.setUser({

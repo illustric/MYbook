@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'singup',
     loadChildren: () => import('./pages/singup/singup.module').then( m => m.SingupPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 

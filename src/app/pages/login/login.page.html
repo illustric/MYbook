@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content padding>
+  <div text-center padding>
+    <img src="../../../assets/logo.PNG" width="110px" height="100px"/>
+  </div>
   <ion-list>
 
 		<ion-item>
@@ -20,8 +23,11 @@
 		  <ion-input type="password" [(ngModel)]="password"></ion-input>
 		</ion-item>
 	  
-	  </ion-list>
+	</ion-list>
 
-	  <ion-button fill="solid" expand="block" color="dark" (click)="login()">Login</ion-button>
+  <ion-button fill="solid" expand="block" color="dark" (click)="login()">Login</ion-button>
+  <div text-center>
+    <ion-button  size="small" (click)="singup()" shape="round">sing up?</ion-button>
+  </div>
 
 </ion-content>

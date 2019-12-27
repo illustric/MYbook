@@ -15,6 +15,10 @@ export class LoginPage implements OnInit {
 
 
   constructor(public afAuth: AngularFireAuth, public user: UserService, public router: Router) { }
+  singup() {
+    console.log('working on it!');
+    this.router.navigate(['singup']);
+  }
 
   ngOnInit() {
   }

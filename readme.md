@@ -1,3 +1,30 @@
+<h1>ILLUSTRIC</h1>
+<p>This is project of of illustric group to keep record of books (movies),<br>
+user can make profile , and see movies and their details. logo of illustric is </p>
+<img src="../../assets/logo.PNG" alt=""/>
+<h1>Pages</h1>
+<ul>
+  <li>Home</li>
+
+  <li>Login</li>
+
+  <li>sing up</li>
+
+  <li>book</li>
+
+  <li>book details</li>
+
+  <li>read</li>
+
+  <li>Face book  login</li>
+
+  <li>Profile page</li>
+
+  <li>about us</li>
+ 
+  <li>contact us</li>
+</ul>
+
 <h1>Working:</h1>
 <p>This is simple application that allows you to search for movies,seasons,episodes etc,<br>
 and shows their details like: director, imdb rating, stars etc.</p>

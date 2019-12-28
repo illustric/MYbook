@@ -28,7 +28,7 @@ export class ForgotpasswordPage implements OnInit {
     try {
     const forgotData = this.forgotPasswordForm.value;
     console.log('ForgotPaswordData:', forgotData);
-    this.service.userForgotPassword(forgotData).subscribe(
+    this.service.updatePassword(forgotData).subscribe(
       data => {
         console.log('got response from server', data);
         alert('Password sent! Check your Email');

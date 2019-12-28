@@ -13,6 +13,9 @@ interface user {
   providedIn: 'root'
 })
 export class UserService {
+  userForgotPassword(forgotData: any) {
+
+  }
   private user: user
 
 	constructor(private afAuth: AngularFireAuth) {

@@ -59,7 +59,7 @@ the pages that i have created </p>
 <h1>About us</h1>
 <p>in about us page provide detail about developer. provide links of email and git link<br>
 icon  used instead of picture</p>
-<div><img src="../../../assets/developer.png" width="110px" height="100px"/></div>
+<img src="../../../assets/developer.png" width="110px" height="100px"/>
 
 
 contact on git  <a href="https://github.com/illustric">git</a>

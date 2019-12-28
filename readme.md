@@ -19,8 +19,10 @@ and shows their details like: director, imdb rating, stars etc.</p>
 <img src="singup.png" width="752">
 <img src="sort.png" width="752">
 <img src="login.png" width="752">
+<img src="batman.png" width="752">
+<img src="dtails of batman.png" width="752">
 
-![alt text](./src/assets/imags/search.png)
+
 
 <h1>Running Project</h1>
 -> git clone or download repository<br>

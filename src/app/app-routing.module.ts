@@ -47,6 +47,10 @@ const routes: Routes = [
   {
     path: 'fb',
     loadChildren: () => import('./pages/fb/fb.module').then( m => m.FbPageModule)
+  },
+  {
+    path: 'forgotpassword',
+    loadChildren: () => import('./pages/forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
   }
 
 ];

@@ -5,5 +5,27 @@
 </ion-header>
 
 <ion-content>
+  <div *ngIf="isLoggedIn; else facebookLogin">
+    <h1>Facebook</h1>
+    <h2>Hi, {{users.name}} ({{users.email}})</h2>
+    <p>
+      Gender: {{users.gender}}
+    </p>
+    <p>
+      <img src="{{users.picture.data.url}}" width="100" alt="{{users.name}}" />
+    </p>
+    <p>
+      <button ion-button icon-right (click)="logout()">
+        Facebook Logout
+      </button>
+    </p>
+  </div>
+  <ng-template #facebookLogin>
+    <button ion-button icon-right (click)="facebookLoginFirebase()">
+      Facebook Login
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+  </ng-template>
+
 
 </ion-content>

@@ -59,11 +59,12 @@ the pages that i have created </p>
 <h1>About us</h1>
 <p>in about us page provide detail about developer. provide links of email and git link<br>
 icon  used instead of picture</p>
-<img src="../../../assets/developer.png" width="110px" height="100px"/>
+<img src="../../../assets/developer.png" width="100">
 
 
-contact on git  <a href="https://github.com/illustric">git</a>
-contact on facebook  <a href="https://www.facebook.com/"><img src="../../../assets/facebook.png"></a>
+contact on git  <a href="https://github.com/illustric">githu</a>
+<br>
+contact on facebook  <a href="https://www.facebook.com/">facebook</a>
 
 
 

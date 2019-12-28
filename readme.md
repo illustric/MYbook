@@ -15,10 +15,10 @@ and shows their details like: director, imdb rating, stars etc.</p>
 <br>
 <br>
 
-<img src="search.PNG" width="800">
-<img src="singup.PNG" width="800">
-<img src="sort.PNG" width="800">
-<img src="loin.PNG" width="800">
+<img src="search.PNG" width="752">
+<img src="singup.PNG" width="752">
+<img src="sort.PNG" width="752">
+<img src="login.PNG" width="752">
 
 
 <h1>Running Project</h1>
@@ -26,4 +26,4 @@ and shows their details like: director, imdb rating, stars etc.</p>
 -> npm install<br>
 <h2>Thanks!</h2>
 <h3>Regards:</h3>
-<p>Waqas Abbasi</p>
+<p>Muhammad adeel</p>

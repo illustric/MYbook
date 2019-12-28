@@ -43,6 +43,10 @@ const routes: Routes = [
   {
     path: 'aboutus',
     loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+  {
+    path: 'fb',
+    loadChildren: () => import('./pages/fb/fb.module').then( m => m.FbPageModule)
   }
 
 ];

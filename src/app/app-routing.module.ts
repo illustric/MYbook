@@ -38,11 +38,13 @@ const routes: Routes = [
   },
   {
     path: 'book-details/:id',
-    loadChildren: './pages/book-details/book-details.module#BookDetailsPageModule'
+    loadChildren: './pages/book-details/book-details.module#BookDetailsPageModule',
+    canActivate: [AuthService]
   },
   {
     path: 'aboutus',
-    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
+    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'fb',
@@ -54,11 +56,13 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'read',
-    loadChildren: () => import('./pages/read/read.module').then( m => m.ReadPageModule)
+    loadChildren: () => import('./pages/read/read.module').then( m => m.ReadPageModule),
+    canActivate: [AuthService]
   }
 
 ];

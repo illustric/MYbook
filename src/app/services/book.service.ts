@@ -18,7 +18,7 @@ export enum SearchType {
 export class BookService {
 
   url = 'http://www.omdbapi.com/';
-  apiKey = 'b1cbb0e1'; // <-- Enter your own key here!
+  apiKey = '***********'; // <-- Enter your own key here!
  
   /**
    * Constructor of the Service with Dependency Injection

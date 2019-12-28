@@ -24,7 +24,7 @@ export class ForgotpasswordPage implements OnInit {
        email: [null, [Validators.required, Validators.email]]
     });
   }
-  forgotPassword() {
+ /* forgotPassword() {
     try {
     const forgotData = this.forgotPasswordForm.value;
     console.log('ForgotPaswordData:', forgotData);
@@ -40,6 +40,6 @@ export class ForgotpasswordPage implements OnInit {
     } catch (ex) {
         console.log('ex', ex);
       }
-  }
+  }*/
 
 }

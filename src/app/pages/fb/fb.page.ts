@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoadingController, Platform, NavController} from 'ionic-angular';
+//import {LoadingController, Platform, NavController} from 'ionic-angular';
 import { auth } from 'firebase/app'
 import { Facebook } from '@ionic-native/facebook';
 
@@ -14,12 +14,12 @@ export class FbPage implements OnInit {
   isLoggedIn:boolean = false;
   users: any;
 
-  constructor(private navCtrl: NavController, private fb: Facebook, public loadingCtrl: LoadingController, private plt: Platform, public afAuth: AngularFireAuth) { }
+  constructor(/*private navCtrl: NavController, private fb: Facebook, public loadingCtrl: LoadingController, private plt: Platform, public afAuth: AngularFireAuth*/) { }
 
   ngOnInit() {
   }
 
-  ionViewWillEnter(){
+  /*ionViewWillEnter(){
 
     let loading = this.loadingCtrl.create({
       content: 'Please wait...',
@@ -74,5 +74,5 @@ export class FbPage implements OnInit {
             console.log('Error logout from Google', e)
           });
     }
-  }
+  }*/
 }

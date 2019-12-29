@@ -43,8 +43,8 @@ const routes: Routes = [
   },
   {
     path: 'aboutus',
-    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule),
-    canActivate: [AuthService]
+    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
+    //canActivate: [AuthService]
   },
   {
     path: 'fb',
@@ -56,13 +56,13 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule),
-    canActivate: [AuthService]
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    //canActivate: [AuthService]
   },
   {
     path: 'read',
-    loadChildren: () => import('./pages/read/read.module').then( m => m.ReadPageModule),
-    canActivate: [AuthService]
+    loadChildren: () => import('./pages/read/read.module').then( m => m.ReadPageModule)
+    //canActivate: [AuthService]
   }
 
 ];

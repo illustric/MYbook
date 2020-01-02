@@ -48,6 +48,9 @@ the pages that i have created </p>
 <p>search during demo</p>
 <img src="search.png" width="752">
 <br>
+<p>side menu lokk like</p>
+<img src="sidemenu.png" width="752">
+<br>
 <p>sort during demo </p>
 <img src="sort.png" width="752">
 <br>
@@ -59,8 +62,14 @@ the pages that i have created </p>
 <h1>About us</h1>
 <p>in about us page provide detail about developer. provide links of email and git link<br>
 icon  used instead of picture</p>
-<img src="../../../assets/developer.png" width="100">
+<br>
+<img src="aboutus.png" width="752">
+<br>
 
+<img src="../../../assets/developer.png" width="100">
+<br>
+
+<img src="fb.png" width="752">
 
 contact on git  <a href="https://github.com/illustric">githu</a>
 <br>
